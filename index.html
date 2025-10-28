@@ -10,6 +10,10 @@
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
   </head>
   <body>
     <div class="container d-flex justify-content-center align-items-center">
@@ -22,6 +26,236 @@
         <div class="card-body">
           <div class="alert alert-danger" role="alert">
             Some fields are missing
+          </div>
+
+          <!-- Card Number Fields -->
+          <div class="row">
+            <div class="col-md-5">
+              <form>
+                <div class="mb-3">
+                  <label for="card-num" class="form-label">Card #</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="card-num"
+                    placeholder="XXXXXXXXXXX"
+                  />
+                </div>
+              </form>
+            </div>
+            <div class="col-md-3">
+              <form>
+                <div class="mb-3">
+                  <label for="cvc" class="form-label">CVC #</label>
+                  <input type="text" class="form-control" id="cvc" />
+                </div>
+              </form>
+            </div>
+            <div class="col-md-4">
+              <form>
+                <div class="mb-3">
+                  <label for="amount" class="form-label">Amount</label>
+                  <input type="number" class="form-control" id="amount" />
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <!-- First Name Last Name -->
+          <div class="row">
+            <div class="col-md-6">
+              <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label"
+                    >First Name</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleInputEmail1"
+                    aria-describedby="emailHelp"
+                  />
+                </div>
+              </form>
+            </div>
+            <div class="col-md-6">
+              <form>
+                <div class="mb-3">
+                  <label for="last-name" class="form-label">Last Name</label>
+                  <input type="text" class="form-control" id="last-name" />
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <!-- City State and Zip -->
+          <div class="row">
+            <div class="col-md-6">
+              <form>
+                <div class="mb-3">
+                  <label for="city" class="form-label">City</label>
+                  <input type="text" class="form-control" id="city" />
+                </div>
+              </form>
+            </div>
+            <div class="col-md-3">
+              <form>
+                <div class="mb-3">
+                  <label for="state" class="form-label">State</label>
+                  <select class="form-select" name="state" id="state">
+                    <option value="" selected="selected">Pick a state</option>
+                    <option value="AL">Alabama</option>
+                    <option value="AK">Alaska</option>
+                    <option value="AZ">Arizona</option>
+                    <option value="AR">Arkansas</option>
+                    <option value="CA">California</option>
+                    <option value="CO">Colorado</option>
+                    <option value="CT">Connecticut</option>
+                    <option value="DE">Delaware</option>
+                    <option value="DC">District Of Columbia</option>
+                    <option value="FL">Florida</option>
+                    <option value="GA">Georgia</option>
+                    <option value="HI">Hawaii</option>
+                    <option value="ID">Idaho</option>
+                    <option value="IL">Illinois</option>
+                    <option value="IN">Indiana</option>
+                    <option value="IA">Iowa</option>
+                    <option value="KS">Kansas</option>
+                    <option value="KY">Kentucky</option>
+                    <option value="LA">Louisiana</option>
+                    <option value="ME">Maine</option>
+                    <option value="MD">Maryland</option>
+                    <option value="MA">Massachusetts</option>
+                    <option value="MI">Michigan</option>
+                    <option value="MN">Minnesota</option>
+                    <option value="MS">Mississippi</option>
+                    <option value="MO">Missouri</option>
+                    <option value="MT">Montana</option>
+                    <option value="NE">Nebraska</option>
+                    <option value="NV">Nevada</option>
+                    <option value="NH">New Hampshire</option>
+                    <option value="NJ">New Jersey</option>
+                    <option value="NM">New Mexico</option>
+                    <option value="NY">New York</option>
+                    <option value="NC">North Carolina</option>
+                    <option value="ND">North Dakota</option>
+                    <option value="OH">Ohio</option>
+                    <option value="OK">Oklahoma</option>
+                    <option value="OR">Oregon</option>
+                    <option value="PA">Pennsylvania</option>
+                    <option value="RI">Rhode Island</option>
+                    <option value="SC">South Carolina</option>
+                    <option value="SD">South Dakota</option>
+                    <option value="TN">Tennessee</option>
+                    <option value="TX">Texas</option>
+                    <option value="UT">Utah</option>
+                    <option value="VT">Vermont</option>
+                    <option value="VA">Virginia</option>
+                    <option value="WA">Washington</option>
+                    <option value="WV">West Virginia</option>
+                    <option value="WI">Wisconsin</option>
+                    <option value="WY">Wyoming</option>
+                  </select>
+                </div>
+              </form>
+            </div>
+            <div class="col-md-3">
+              <form>
+                <div class="mb-3">
+                  <label for="zip" class="form-label">Postal Code</label>
+                  <input type="text" class="form-control" id="zip" />
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <!-- We accept/Message -->
+          <div class="row">
+            <div class="col-md-6">
+              <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label d-block"
+                    >We accept</label
+                  >
+                  <div
+                    class="d-inline-flex align-items-center gap-3 p-2 rounded-3 bg-secondary text-white"
+                  >
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="payment-method"
+                        id="master-card"
+                        value="mastercard"
+                        checked
+                      />
+                      <label class="form-check-label" for="master-card">
+                        <div class="bg-secondary text-white">
+                          <i class="fa-brands fa-cc-mastercard"></i>
+                        </div>
+                      </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="payment-method"
+                        id="visa"
+                        value="visa"
+                      />
+                      <label class="form-check-label" for="visa">
+                        <div class="bg-secondary text-white">
+                          <i class="fa-brands fa-cc-visa"></i>
+                        </div>
+                      </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="payment-method"
+                        id="diners-club"
+                        value="diners-club"
+                      />
+                      <label class="form-check-label" for="diners-club">
+                        <div class="bg-secondary text-white">
+                          <i class="fa-brands fa-cc-diners-club"></i>
+                        </div>
+                      </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="payment-method"
+                        id="amex"
+                        value="amex"
+                      />
+                      <label class="form-check-label" for="gridRadios2">
+                        <div class="bg-secondary text-white">
+                          <i class="fa-brands fa-cc-amex"></i>
+                        </div>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="col-md-6">
+              <form>
+                <div class="mb-3">
+                  <label for="last-name" class="form-label">Message</label>
+                  <textarea
+                    class="form-control"
+                    id="message"
+                    name="message"
+                    rows="3"
+                    required
+                  ></textarea>
+                  <div class="form-text">Add any notes here.</div>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
 
